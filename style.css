@@ -170,7 +170,7 @@ header > div {
     left: 0;
     width: 100%;
     height: auto;
-    filter: brightness(30%);
+    filter: brightness(50%);
     cursor: pointer;
     pointer-events: none;
     z-index: 2;
@@ -180,7 +180,7 @@ header > div {
     color: #f2f2f2;
     font-size: calc(3vw + 5px);
     position: absolute;
-    bottom: 12%;
+    bottom: 7%;
     left: 12.5%;
     width: 75%;
     text-align: center;
@@ -193,7 +193,7 @@ header > div {
     width: 20vw;
     max-width: 236px;
     height: 20vw;
-    top: 43%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -55%);
     background: url("images/icon-play.png") no-repeat;
@@ -321,29 +321,36 @@ header > div {
 /* Styling the Newsletter section */
 #newsletter {
     position: relative;
-    background: url("images/WoodsBackground.jpg") no-repeat top;
+    background: url("images/WoodsBackground.jpg") no-repeat center;
     background-size: cover;
+    background-origin: padding-box;
     margin: 0;
-    padding-top: 60px;
-    padding-bottom: 100px;
     color: black;
     text-align: center;
 }
 
-#newsletter p:first-child {
+#newsletter form {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+form p:first-child {
     font-size: calc(2vw + 1em);
     letter-spacing: .2em;
     margin: 25px 35px;
 }
 
-#newsletter p {
+form p {
     margin: 25px 35px 0;
     font-size: 0.9em;
     line-height: 1.5;
     letter-spacing: 0;
 }
 
-#newsletter p a {
+form p a {
     color: black;
     font-style: italic;
 }
@@ -679,4 +686,11 @@ footer > div {
         left: 55%;
         transform: translate(0);
     }
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -62px;
+    visibility: hidden;
 }

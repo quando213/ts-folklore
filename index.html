@@ -27,15 +27,15 @@
             <span onclick="openNav()">&#9776;</span>
         </div>
         <div class="navbar">
-            <a href="#merch">Merch</a>
-            <a href="#videos">Videos</a>
+            <a href="#anchor-merch">Merch</a>
+            <a href="#anchor-videos">Videos</a>
             <a href="events.html">Events</a>
-            <a href="#newsletter">Newsletter</a>
+            <a href="#anchor-newsletter">Newsletter</a>
             <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
         </div>
 
         <div class="sitename">
-            <a href="index.html">Taylor Swift</a>
+            <a href="./">Taylor Swift</a>
         </div>
 
         <div class="social">
@@ -95,48 +95,49 @@
     </div>
 
     <div id="videos">
+        <a class="anchor" id="anchor-videos"></a>
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <div class="video-container">
-                    <div class="thumb" id="thumb-cardigan">
+                    <div class="thumb" id="thumb-1">
                         <img src="images/thumb-cardigan-mv.jpg" alt="">
                         <div class="text">taylor swift - cardigan (official video)</div>
                     </div>
-                    <iframe id="video-cardigan" src="https://www.youtube.com/embed/K-a8s8OLBSE"
+                    <iframe id="video-1" src="https://www.youtube.com/embed/K-a8s8OLBSE"
                             width="560" height="315" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="mySlides fade">
                 <div class="video-container">
-                    <div class="thumb" id="thumb-betty-live">
+                    <div class="thumb" id="thumb-2">
                         <img src="images/thumb-betty-live.jpg" alt="">
                         <div class="text">taylor swift - betty (live from the 2020 academy of country music awards)
                         </div>
                     </div>
-                    <iframe id="video-betty-live" src="https://www.youtube.com/embed/orXAg5dIMa8"
+                    <iframe id="video-2" src="https://www.youtube.com/embed/orXAg5dIMa8"
                             width="560" height="315" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="mySlides fade">
                 <div class="video-container">
-                    <div class="thumb" id="thumb-the-lakes-lyric">
+                    <div class="thumb" id="thumb-3">
                         <img src="images/thumb-the-lakes-lyric.jpg" alt="">
                         <div class="text">taylor swift - the lakes (official lyric video)</div>
                     </div>
-                    <iframe id="video-the-lake-lyric" src="https://www.youtube.com/embed/tOHcAc3r2kw"
+                    <iframe id="video-3" src="https://www.youtube.com/embed/tOHcAc3r2kw"
                             width="560" height="315" allowfullscreen></iframe>
                 </div>
             </div>
 
             <div class="mySlides fade">
                 <div class="video-container">
-                    <div class="thumb" id="thumb-cardigan-foot-notes">
-                        <img src="images/thumb-cardigan-foot-notes.jpg" alt="">
-                        <div class="text">taylor swift - cardigan ((footnotes) | vevo)</div>
+                    <div class="thumb" id="thumb-4">
+                        <img src="images/thumb-exile-lyric.jpg" alt="">
+                        <div class="text">taylor swift - exile (feat. Bon Iver) (official lyric video)</div>
                     </div>
-                    <iframe id="video-cardigan-foot-notes" src="https://www.youtube.com/embed/GPQdWYNi8Wc"
+                    <iframe id="video-4" src="https://www.youtube.com/embed/osdoLjUNFnA"
                             width="560" height="315" allowfullscreen></iframe>
                 </div>
             </div>
@@ -146,6 +147,7 @@
         </div>
     </div>
 
+    <a class="anchor" id="anchor-merch"></a> <!-- To fix anchor link to roll past the sticky nav bar -->
     <div id="merch">
         <h2>Shop New Merchandise!</h2>
         <p>While Supplies Last</p>
@@ -221,7 +223,8 @@
     </div>
 
     <div id="newsletter">
-        <form action="thankyou.html">
+        <a class="anchor" id="anchor-newsletter"></a>
+        <form action="thankyou.html" method="post">
             <p>SIGN UP TO RECEIVE UPDATES</p>
             <div id="form">
                 <input type="email" id="email" name="email" placeholder="email address*" required>
@@ -513,10 +516,10 @@
 
 <div id="sidenav">
     <div class="menu">
-        <a href="#merch">Merch</a>
-        <a href="#videos">Videos</a>
-        <a href="#events">Events</a>
-        <a href="#newsletter">Newsletter</a>
+        <a href="index.html#anchor-merch" onclick="closeNav()">Merch</a>
+        <a href="index.html#anchor-videos" onclick="closeNav()">Videos</a>
+        <a href="events.html" onclick="closeNav()">Events</a>
+        <a href="index.html#anchor-newsletter" onclick="closeNav()">Newsletter</a>
         <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
     </div>
     <div class="social">
@@ -589,8 +592,8 @@ function showSlides(n) {
 <script type="application/javascript">
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-cardigan') {
-            document.getElementById('thumb-cardigan').style.display = 'none';
+        if (elem && elem.id == 'video-1') {
+            document.getElementById('thumb-1').style.display = 'none';
             clearInterval(monitor);
         }
     }, 100);
@@ -599,8 +602,8 @@ function showSlides(n) {
 <script type="application/javascript">
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-betty-live') {
-            document.getElementById('thumb-betty-live').style.display = 'none';
+        if (elem && elem.id == 'video-2') {
+            document.getElementById('thumb-2').style.display = 'none';
             clearInterval(monitor);
         }
     }, 100);
@@ -609,8 +612,8 @@ function showSlides(n) {
 <script type="application/javascript">
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-the-lake-lyric') {
-            document.getElementById('thumb-the-lakes-lyric').style.display = 'none';
+        if (elem && elem.id == 'video-3') {
+            document.getElementById('thumb-3').style.display = 'none';
             clearInterval(monitor);
         }
     }, 100);
@@ -619,11 +622,22 @@ function showSlides(n) {
 <script type="application/javascript">
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-cardigan-foot-notes') {
-            document.getElementById('thumb-cardigan-foot-notes').style.display = 'none';
+        if (elem && elem.id == 'video-4') {
+            document.getElementById('thumb-4').style.display = 'none';
             clearInterval(monitor);
         }
     }, 100);
 </script>
+
+<script type="application/javascript">
+    var monitor = setInterval(function () {
+        var elem = document.activeElement;
+        if (elem && elem.id == 'video-5') {
+            document.getElementById('thumb-5').style.display = 'none';
+            clearInterval(monitor);
+        }
+    }, 100);
+</script>
+
 </body>
 </html>
