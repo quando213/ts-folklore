@@ -1,0 +1,682 @@
+@font-face {
+    font-family: 'IM FELL DW Pica';
+    src: url('fonts/IM_FELL_DW_Pica_Roman.woff') format('woff'),
+    url('fonts/IM_FELL_DW_Pica_Roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'IM FELL DW Pica';
+    src: url('fonts/IM_FELL_DW_Pica_Italic.woff') format('woff'),
+    url('fonts/IM_FELL_DW_Pica_Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "IM FELL DW Pica", serif;
+    font-size: 0.75em;
+    line-height: 1.5;
+    color: #333333;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: normal;
+}
+
+/* STYLING MOBILE MODE */
+
+.navbar, header .social {
+    display: none;
+}
+
+/* Styling the Header */
+header {
+    display: flex;
+    background: url("images/bg-topbar.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 60px;
+    border-bottom: 2px solid white;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    z-index: 5;
+    letter-spacing: 1px;
+}
+
+header > div {
+    flex: 1;
+    display: flex;
+}
+
+.sitename {
+    justify-content: center;
+}
+
+#openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 8px;
+    margin-right: auto;
+}
+
+.sitename a {
+    color: white;
+    font-size: 3em;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+/* Styling the Banner */
+#banner {
+    position: relative;
+}
+
+#banner-img img {
+    display: block;
+    width: 100%;
+}
+
+#banner-desc {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 50px;
+    overflow: hidden;
+}
+
+.white-text {
+    font-size: calc(2.12963vw + 14px);
+    color: white;
+}
+
+.album-name {
+    font-size: calc(4.44444vw + 32px);
+    font-style: italic;
+    color: #494e48;
+}
+
+#album-cover {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button {
+    display: block;
+    background: url("images/bg-btn.jpg");
+    background-size: cover;
+    border: none;
+    padding: 8px 30px;
+    margin: 10px 0;
+    font-family: inherit;
+    font-size: calc(2.12963vw + 10px);
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+/* Styling the Target section */
+#target img {
+    display: block;
+    width: 100%;
+}
+
+/* Styling the Videos section */
+.slideshow-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.video-container img { /* the thumbnail */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    filter: brightness(30%);
+    cursor: pointer;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.video-container .text { /* the video name */
+    color: #f2f2f2;
+    font-size: calc(3vw + 5px);
+    position: absolute;
+    bottom: 12%;
+    left: 12.5%;
+    width: 75%;
+    text-align: center;
+    z-index: 4;
+}
+
+.thumb:after {
+    content: "";
+    position: absolute;
+    width: 20vw;
+    max-width: 236px;
+    height: 20vw;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    background: url("images/icon-play.png") no-repeat;
+    background-size: contain;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    margin: 0 15px;
+    user-select: none;
+    transition: transform 0.3s;
+    z-index: 2;
+}
+
+.next { /* Position the "next button" to the right */
+    right: 0;
+}
+
+.prev img, .next img {
+    width: 35px;
+    height: auto;
+}
+
+.next img {
+    transform: scaleX(-1);
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.2);
+}
+
+.fade { /* Fading animation */
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* Styling the Merch section */
+#merch {
+    position: relative;
+    background: #d3d2d7 url("images/bg-top.jpg") no-repeat left top;
+    background-size: contain;
+    margin: 0;
+    padding-top: 70px;
+}
+
+#merch h2 {
+    color: #494e48;
+    font-size: calc(2.87037vw + 21.81px);
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 0 19px #4e4c4c;
+    letter-spacing: .1em;
+}
+
+#merch > p {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+#merch-container {
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: baseline;
+    flex-flow: row wrap;
+    padding: 40px 20px 120px;
+}
+
+.item {
+    flex: 100%;
+    margin-bottom: 50px;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.item p {
+    bottom: 0;
+    color: #838385;
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+#merch .button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Styling the Newsletter section */
+#newsletter {
+    position: relative;
+    background: url("images/WoodsBackground.jpg") no-repeat top;
+    background-size: cover;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    color: black;
+    text-align: center;
+}
+
+#newsletter p:first-child {
+    font-size: calc(2vw + 1em);
+    letter-spacing: .2em;
+    margin: 25px 35px;
+}
+
+#newsletter p {
+    margin: 25px 35px 0;
+    font-size: 0.9em;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+
+#newsletter p a {
+    color: black;
+    font-style: italic;
+}
+
+#form {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 10% 10px;
+}
+
+#form input {
+    flex: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: inherit;
+    font-size: 1.2em;
+    height: 22px;
+    padding: 12px 0;
+}
+
+#form input:focus {
+    outline: none;
+}
+
+#form input::placeholder {
+    color: black;
+}
+
+#newsletter .button {
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 0;
+}
+
+/* Styling the Footer */
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    background: url("images/bg-topbar.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 40px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer > div {
+    flex: 1;
+    display: flex;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    padding-right: 8px;
+    padding-bottom: 5px;
+}
+
+.social > a {
+    padding-left: 5px;
+}
+
+.social .iconify {
+    color: white;
+    width: 2.5em;
+    height: auto;
+}
+
+.legal {
+    display: flex;
+    flex-flow: column;
+    margin: 0 15px;
+}
+
+.legal a {
+    color: white;
+    font-size: 0.875em;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-align: center;
+    white-space: nowrap;
+    margin: 5px 8px 0;
+}
+
+/* Styling the Events page */
+#events {
+    position: relative;
+    min-height: calc(100vh - 10vw - 110px);
+    background: url("images/WoodsBackground.jpg") center;
+    background-size: cover;
+    padding: 5%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#events h2 {
+    font-weight: bold;
+}
+
+#events .text-box {
+    position: relative;
+    background: white;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 960px;
+    padding: 12px;
+    margin-bottom: 80px;
+}
+
+#events p {
+    line-height: 1.8;
+    font-size: 1.15em;
+}
+
+/* Styling the Thank You page */
+#thankyou {
+    position: relative;
+    min-height: calc(100vh - 150px);
+    background: url("images/bg-forest.jpg") center bottom;
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+#thankyou p {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    line-height: 2;
+    font-size: 1.7em;
+}
+
+#thankyou .button {
+    position: relative;
+    width: 30%;
+    max-width: 200px;
+    font-size: calc(1vw + 12px);
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Styling the Sidenav */
+#sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #586457;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#sidenav .menu a {
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.125em;
+    color: #fefefe;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidenav a:hover {
+    color: #818181;
+}
+
+#sidenav .social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#sidenav .iconify {
+    color: white;
+    width: 1.5em;
+    height: auto;
+    padding: 25px 6px;
+}
+
+/* Setting up the transition when opening sidenav */
+#main {
+    transition: transform .5s;
+}
+
+#fill {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.6;
+    z-index: -2;
+}
+
+/* STYLING LARGER PHONES */
+@media screen and (min-width: 300px) {
+    .item {
+        flex: 50%;
+    }
+
+    .sitename a {
+        white-space: nowrap;
+    }
+}
+
+/* STYLING TABLET MODE */
+@media screen and (min-width: 688px) {
+    #album-cover {
+        display: none;
+    }
+
+    #banner-desc {
+        width: 40%;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .white-text {
+        font-size: calc(1vw + 20px);
+    }
+
+    .album-name {
+        font-size: calc(1.3vw + 46px);
+    }
+
+    button {
+        font-size: calc(1vw + 20px);
+    }
+
+    #banner-img::before { /* Add gradient transparent background to display text better */
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0) 50%, rgba(73, 73, 73, 0.6));;
+    }
+
+    .prev img, .next img {
+        width: 110px;
+        height: auto;
+    }
+
+    .item {
+        flex: 25%;
+    }
+
+    #form input {
+        flex: 48%;
+        padding-left: 10px;
+        margin-right: 5px;
+    }
+
+    .legal {
+        flex-direction: row;
+    }
+
+    #thankyou p:first-line {
+        font-size: 2em;
+    }
+}
+
+/* STYLING DESKTOP MODE */
+@media screen and (min-width: 992px) {
+    #openbtn, #empty {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+        margin-left: 8px;
+    }
+
+    .navbar a {
+        color: white;
+        font-size: 1.5625em;
+        font-style: italic;
+        text-decoration: none;
+        text-transform: lowercase;
+        padding: 16px 8px;
+    }
+
+    header .social {
+        display: flex;
+    }
+
+    .social {
+        justify-content: flex-end;
+        padding-bottom: 0;
+    }
+
+    #newsletter p {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 4px 0;
+    }
+
+    footer .social {
+        padding-bottom: 0;
+    }
+
+    .legal a {
+        margin: 0 8px;
+    }
+
+    #thankyou .button {
+        position: relative;
+        left: 55%;
+        transform: translate(0);
+    }
+}
