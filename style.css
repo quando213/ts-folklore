@@ -539,9 +539,9 @@ footer > div {
 
 #sidenav .iconify {
     color: white;
-    width: 1.5em;
+    width: 1.7em;
     height: auto;
-    padding: 25px 6px;
+    padding: 25px 2px;
 }
 
 /* Setting up the transition when opening sidenav */
