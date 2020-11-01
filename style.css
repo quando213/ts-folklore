@@ -680,3 +680,7 @@ footer > div {
         transform: translate(0);
     }
 }
+
+#outer-wrapper {
+	overflow: hidden;
+}
