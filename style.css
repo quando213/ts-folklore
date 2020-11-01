@@ -530,9 +530,6 @@ footer > div {
 }
 
 /* Setting up the transition when opening sidenav */
-/*#main {*/
-/*    transition: transform .5s;*/
-/*}*/
 
 #fill {
     width: 100%;
@@ -542,6 +539,10 @@ footer > div {
     left: 0;
     background: rgba(34, 34, 34, 0.5);
     z-index: -2;
+}
+
+#outer-wrapper {
+    overflow: hidden;
 }
 
 /* To make anchor links scroll past the sticky nav bar */
@@ -662,6 +663,11 @@ footer > div {
         margin-right: 20%;
     }
 
+    #newsletter p:first-child {
+        margin-left: 16%;
+        margin-right: 16%;
+    }
+
     footer {
         flex-direction: row;
         padding: 4px 0;
@@ -682,8 +688,4 @@ footer > div {
         left: 55%;
         transform: translate(0);
     }
-}
-
-#outer-wrapper {
-    overflow: hidden;
 }
