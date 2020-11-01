@@ -24,473 +24,508 @@
 </head>
 
 <body>
-<div id="main">
-    <a href="javascript:void(0)" onclick="closeNav()"> <!-- Click to close sidenav (mobile/tablet only) -->
-        <div id="fill"></div> <!-- To make the main page darker while opening sidenav -->
-    </a>
+<div id="outer-wrapper">
+    <div id="main">
+        <a href="javascript:void(0)" onclick="closeNav()"> <!-- Click to close sidenav (mobile/tablet only) -->
+            <div id="fill"></div> <!-- To make the main page darker while opening sidenav -->
+        </a>
 
-    <header>
-        <div id="openbtn">
-            <span onclick="openNav()">&#9776;</span>
+        <header>
+            <div id="openbtn">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+            <div class="navbar">
+                <a href="#merch">Merch</a>
+                <a href="#videos">Videos</a>
+                <a href="events.html">Events</a>
+                <a href="#newsletter">Newsletter</a>
+                <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
+            </div>
+
+            <div class="sitename">
+                <a href="./">Taylor Swift</a>
+            </div>
+
+            <div class="social">
+                <a href="https://facebook.com/TaylorSwift" target="_blank"><span
+                        class="iconify icon:entypo-social:facebook-with-circle"
+                ></span></a>
+                <a href="https://instagram.com/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:instagram-with-circle">
+            </span></a>
+                <a href="http://taylorswift.tumblr.com/" target="_blank"><span
+                        class="iconify icon:entypo-social:tumblr-with-circle">
+            </span></a>
+                <a href="https://twitter.com/taylorswift13" target="_blank"><span
+                        class="iconify icon:entypo-social:twitter-with-circle">
+            </span></a>
+                <a href="https://youtube.com/user/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:youtube-with-circle">
+            </span></a>
+                <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
+                        class="iconify icon:fa-brands:snapchat">
+            </span></a>
+                <a href="https://store.taylorswift.com/" target="_blank"><span
+                        class="iconify icon:el:shopping-cart-sign">
+            </span></a>
+            </div>
+
+            <div id="empty"></div> <!-- To make the sitename center -->
+        </header>
+
+        <div id="banner">
+            <div id="banner-desc">
+                <div class="white-text">New Deluxe Album</div>
+                <div class="album-name">folklore</div>
+                <div class="white-text">Available Now</div>
+                <img id="album-cover" src="images/FrontCover11.jpg" alt="folklore Available Now">
+                <a class="button" href="http://taylor.lnk.to/folkloredlxWE" target="_blank">
+                    stream/download
+                </a>
+            </div>
+            <picture id="banner-img">
+                <source srcset="images/banner-mobile.jpg" media="(max-width: 687px)">
+                <source srcset="images/banner-tablet.jpg" media="(max-width: 991px)">
+                <img src="images/banner-desk-lg.jpg" alt="The new album folklore available now">
+            </picture>
         </div>
-        <div class="navbar">
-            <a href="#merch">Merch</a>
-            <a href="#videos">Videos</a>
-            <a href="events.html">Events</a>
-            <a href="#newsletter">Newsletter</a>
-            <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
-        </div>
 
-        <div class="sitename">
-            <a href="./">Taylor Swift</a>
-        </div>
-
-        <div class="social">
-            <a href="https://facebook.com/TaylorSwift" target="_blank"><span
-                    class="iconify icon:entypo-social:facebook-with-circle"
-            ></span></a>
-            <a href="https://instagram.com/taylorswift" target="_blank"><span
-                    class="iconify icon:entypo-social:instagram-with-circle">
-            </span></a>
-            <a href="http://taylorswift.tumblr.com/" target="_blank"><span
-                    class="iconify icon:entypo-social:tumblr-with-circle">
-            </span></a>
-            <a href="https://twitter.com/taylorswift13" target="_blank"><span
-                    class="iconify icon:entypo-social:twitter-with-circle">
-            </span></a>
-            <a href="https://youtube.com/user/taylorswift" target="_blank"><span
-                    class="iconify icon:entypo-social:youtube-with-circle">
-            </span></a>
-            <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
-                    class="iconify icon:fa-brands:snapchat">
-            </span></a>
-            <a href="https://store.taylorswift.com/" target="_blank"><span
-                    class="iconify icon:el:shopping-cart-sign">
-            </span></a>
-        </div>
-
-        <div id="empty"></div> <!-- To make the sitename center -->
-    </header>
-
-    <div id="banner">
-        <div id="banner-desc">
-            <div class="white-text">New Deluxe Album</div>
-            <div class="album-name">folklore</div>
-            <div class="white-text">Available Now</div>
-            <img id="album-cover" src="images/FrontCover11.jpg" alt="folklore Available Now">
-            <a class="button" href="http://taylor.lnk.to/folkloredlxWE" target="_blank">
-                stream/download
-            </a>
-        </div>
-        <picture id="banner-img">
-            <source srcset="images/banner-mobile.jpg" media="(max-width: 687px)">
-            <source srcset="images/banner-tablet.jpg" media="(max-width: 991px)">
-            <img src="images/banner-desk-lg.jpg" alt="The new album folklore available now">
-        </picture>
-    </div>
-
-    <div id="target">
-        <a href="http://taylor.lnk.to/folkloreLPtarget" target="_blank" title="Shop Now">
-            <picture>
-                <source srcset="images/target-mobile.jpg" media="(max-width: 687px)">
-                <img src="images/target-desktop.jpg"
-                     alt="Pre-order the new Target exclusive 2-disc red vinyl version of 'meet me behind the mall' edition.
+        <div id="target">
+            <a href="http://taylor.lnk.to/folkloreLPtarget" target="_blank" title="Shop Now">
+                <picture>
+                    <source srcset="images/target-mobile.jpg" media="(max-width: 687px)">
+                    <img src="images/target-desktop.jpg"
+                         alt="Pre-order the new Target exclusive 2-disc red vinyl version of 'meet me behind the mall' edition.
              Includes 16 songs 'the lakes' bonus track, and collectible cover art. Available now for pre-order,
              in-store and online starting 11/20 exclusively at Target. Click to pre-order at Target">
-            </picture>
-        </a>
-    </div>
+                </picture>
+            </a>
+        </div>
 
-    <div id="videos">
-        <div class="slideshow-container">
-            <div class="mySlides fade">
-                <div class="video-container">
-                    <div class="thumb" id="thumb-1">
-                        <img src="images/thumb-cardigan-mv.jpg" alt="">
-                        <div class="text">taylor swift - cardigan (official video)</div>
-                    </div>
-                    <iframe id="video-1" src="https://www.youtube.com/embed/K-a8s8OLBSE"
-                            width="560" height="315" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="video-container">
-                    <div class="thumb" id="thumb-2">
-                        <img src="images/thumb-betty-live.jpg" alt="">
-                        <div class="text">taylor swift - betty (live from the 2020 academy of country music awards)
+        <div id="videos">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="video-container">
+                        <div class="thumb" id="thumb-1">
+                            <img src="images/thumb-cardigan-mv.jpg" alt="">
+                            <div class="text">taylor swift - cardigan (official video)</div>
                         </div>
+                        <iframe id="video-1" src="https://www.youtube.com/embed/K-a8s8OLBSE"
+                                width="560" height="315" allowfullscreen></iframe>
                     </div>
-                    <iframe id="video-2" src="https://www.youtube.com/embed/orXAg5dIMa8"
-                            width="560" height="315" allowfullscreen></iframe>
                 </div>
-            </div>
 
-            <div class="mySlides fade">
-                <div class="video-container">
-                    <div class="thumb" id="thumb-3">
-                        <img src="images/thumb-the-lakes-lyric.jpg" alt="">
-                        <div class="text">taylor swift - the lakes (official lyric video)</div>
+                <div class="mySlides fade">
+                    <div class="video-container">
+                        <div class="thumb" id="thumb-2">
+                            <img src="images/thumb-betty-live.jpg" alt="">
+                            <div class="text">taylor swift - betty (live from the 2020 academy of country music awards)
+                            </div>
+                        </div>
+                        <iframe id="video-2" src="https://www.youtube.com/embed/orXAg5dIMa8"
+                                width="560" height="315" allowfullscreen></iframe>
                     </div>
-                    <iframe id="video-3" src="https://www.youtube.com/embed/tOHcAc3r2kw"
-                            width="560" height="315" allowfullscreen></iframe>
                 </div>
-            </div>
 
-            <div class="mySlides fade">
-                <div class="video-container">
-                    <div class="thumb" id="thumb-4">
-                        <img src="images/thumb-exile-lyric.jpg" alt="">
-                        <div class="text">taylor swift - exile (feat. Bon Iver) (official lyric video)</div>
+                <div class="mySlides fade">
+                    <div class="video-container">
+                        <div class="thumb" id="thumb-3">
+                            <img src="images/thumb-the-lakes-lyric.jpg" alt="">
+                            <div class="text">taylor swift - the lakes (official lyric video)</div>
+                        </div>
+                        <iframe id="video-3" src="https://www.youtube.com/embed/tOHcAc3r2kw"
+                                width="560" height="315" allowfullscreen></iframe>
                     </div>
-                    <iframe id="video-4" src="https://www.youtube.com/embed/osdoLjUNFnA"
-                            width="560" height="315" allowfullscreen></iframe>
                 </div>
-            </div>
 
-            <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-arrow.png" alt="Previous"></a>
-            <a class="next" onclick="plusSlides(1)"><img src="images/icon-arrow.png" alt="Next"></a>
-        </div>
-    </div>
+                <div class="mySlides fade">
+                    <div class="video-container">
+                        <div class="thumb" id="thumb-4">
+                            <img src="images/thumb-exile-lyric.jpg" alt="">
+                            <div class="text">taylor swift - exile (feat. Bon Iver) (official lyric video)</div>
+                        </div>
+                        <iframe id="video-4" src="https://www.youtube.com/embed/osdoLjUNFnA"
+                                width="560" height="315" allowfullscreen></iframe>
+                    </div>
+                </div>
 
-    <div id="merch">
-        <h2>Shop New Merchandise!</h2>
-        <p>While Supplies Last</p>
-        <div id="merch-container">
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-cardigan"
-                   target="_blank">
-                    <img src="images/merch/cardigan-rev.png" alt="the cardigan">
-                    <p>the “cardigan"</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-hoodie"
-                   target="_blank">
-                    <img src="images/merch/Gildan-18500_hoodie_forest-green_cover-+-tracks_0.png"
-                         alt="the 'in the trees' hoodie">
-                    <p>the “in the trees" hoodie</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-tan-hoodie"
-                   target="_blank">
-                    <img src="images/merch/NEW-TREES-HOODIE-FRONT-FINAL.png" alt="the 'in the trees' tan hoodie">
-                    <p>the “in the trees" tan hoodie</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-i-knew-you-t-shirt"
-                   target="_blank">
-                    <img src="images/merch/Gildan-64000_tee_white_cardigan-lyrics-&-brown-border-photo_0.png"
-                         alt="the 'i knew you' t-shirt">
-                    <p>the “i knew you" t-shirt</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-meet-me-behind-the-mall-lithograph"
-                   target="_blank">
-                    <img src="images/merch/litho_1b.png" alt="the 'meet me behind the mall' lithograph">
-                    <p>the “meet me behind the mall" lithograph</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-phone-stand-by-popsockets"
-                   target="_blank">
-                    <img src="images/merch/pop-socket_album-cover-rev.png"
-                         alt="the 'in the trees' phone stand by popsocket">
-                    <p>the “in the trees" phone stand by popsocket</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-phone-case"
-                   target="_blank">
-                    <img src="images/merch/phone-case_album-cover.png" alt="the 'in the trees' phone case">
-                    <p>the “in the trees" phone case</p>
-                </a>
-            </div>
-
-            <div class="item">
-                <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-so-much-for-summer-love-pullover"
-                   target="_blank">
-                    <img src="images/merch/JL%20TD%20Pullover-rev.png" alt="the 'so much for summer' pullover">
-                    <p>the “so much for summer" pullover</p>
-                </a>
+                <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-arrow.png" alt="Previous"></a>
+                <a class="next" onclick="plusSlides(1)"><img src="images/icon-arrow.png" alt="Next"></a>
             </div>
         </div>
-        <a class="button" href="https://store.taylorswift.com/" target="_blank">view all items</a>
-    </div>
 
-    <div id="newsletter">
-        <form action="thankyou.html" method="post">
-            <p>SIGN UP TO RECEIVE UPDATES</p>
-            <div id="form">
-                <input type="email" id="email" name="email" placeholder="email address*" required>
-                <input list="country" name="country" placeholder="select your country*" required>
+        <div id="merch">
+            <h2>Shop New Merchandise!</h2>
+            <p>While Supplies Last</p>
+            <div id="merch-container">
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-cardigan"
+                       target="_blank">
+                        <img src="images/merch/cardigan-rev.png" alt="the cardigan">
+                        <p>the “cardigan"</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-hoodie"
+                       target="_blank">
+                        <img src="images/merch/Gildan-18500_hoodie_forest-green_cover-+-tracks_0.png"
+                             alt="the 'in the trees' hoodie">
+                        <p>the “in the trees" hoodie</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-tan-hoodie"
+                       target="_blank">
+                        <img src="images/merch/NEW-TREES-HOODIE-FRONT-FINAL.png" alt="the 'in the trees' tan hoodie">
+                        <p>the “in the trees" tan hoodie</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-i-knew-you-t-shirt"
+                       target="_blank">
+                        <img src="images/merch/Gildan-64000_tee_white_cardigan-lyrics-&-brown-border-photo_0.png"
+                             alt="the 'i knew you' t-shirt">
+                        <p>the “i knew you" t-shirt</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-meet-me-behind-the-mall-lithograph"
+                       target="_blank">
+                        <img src="images/merch/litho_1b.png" alt="the 'meet me behind the mall' lithograph">
+                        <p>the “meet me behind the mall" lithograph</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-phone-stand-by-popsockets"
+                       target="_blank">
+                        <img src="images/merch/pop-socket_album-cover-rev.png"
+                             alt="the 'in the trees' phone stand by popsocket">
+                        <p>the “in the trees" phone stand by popsocket</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-in-the-trees-phone-case"
+                       target="_blank">
+                        <img src="images/merch/phone-case_album-cover.png" alt="the 'in the trees' phone case">
+                        <p>the “in the trees" phone case</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="https://store.taylorswift.com/collections/the-you-put-me-on-collection/products/the-so-much-for-summer-love-pullover"
+                       target="_blank">
+                        <img src="images/merch/JL%20TD%20Pullover-rev.png" alt="the 'so much for summer' pullover">
+                        <p>the “so much for summer" pullover</p>
+                    </a>
+                </div>
             </div>
-            <datalist id="country">
-                <option value="Afghanistan">
-                <option value="Albania">
-                <option value="Algeria">
-                <option value="American Samoa">
-                <option value="Andorra">
-                <option value="Angola">
-                <option value="Anguilla">
-                <option value="Antarctica">
-                <option value="Antigua and Barbuda">
-                <option value="Argentina">
-                <option value="Armenia">
-                <option value="Aruba">
-                <option value="Australia">
-                <option value="Austria">
-                <option value="Azerbaijan">
-                <option value="Bahamas">
-                <option value="Bahrain">
-                <option value="Bangladesh">
-                <option value="Barbados">
-                <option value="Belarus">
-                <option value="Belgium">
-                <option value="Belize">
-                <option value="Benin">
-                <option value="Bermuda">
-                <option value="Bhutan">
-                <option value="Bolivia">
-                <option value="Bosnia and Herzegovina">
-                <option value="Botswana">
-                <option value="Bouvet Island">
-                <option value="Brazil">
-                <option value="British Indian Ocean Territory">
-                <option value="Brunei Darussalam">
-                <option value="Bulgaria">
-                <option value="Burkina Faso">
-                <option value="Burundi">
-                <option value="Cambodia">
-                <option value="Cameroon">
-                <option value="Canada">
-                <option value="Cape Verde">
-                <option value="Cayman Islands">
-                <option value="Central African Republic">
-                <option value="Chad">
-                <option value="Chile">
-                <option value="China">
-                <option value="Christmas Island">
-                <option value="Cocos (Keeling) Islands">
-                <option value="Colombia">
-                <option value="Comoros">
-                <option value="Congo">
-                <option value="Congo, The Democratic Republic of The">
-                <option value="Cook Islands">
-                <option value="Costa Rica">
-                <option value="Cote D'ivoire">
-                <option value="Croatia">
-                <option value="Cuba">
-                <option value="Cyprus">
-                <option value="Czech Republic">
-                <option value="Denmark">
-                <option value="Djibouti">
-                <option value="Dominica">
-                <option value="Dominican Republic">
-                <option value="Ecuador">
-                <option value="Egypt">
-                <option value="El Salvador">
-                <option value="Equatorial Guinea">
-                <option value="Eritrea">
-                <option value="Estonia">
-                <option value="Ethiopia">
-                <option value="Falkland Islands (Malvinas)">
-                <option value="Faroe Islands">
-                <option value="Fiji">
-                <option value="Finland">
-                <option value="France">
-                <option value="French Guiana">
-                <option value="French Polynesia">
-                <option value="French Southern Territories">
-                <option value="Gabon">
-                <option value="Gambia">
-                <option value="Georgia">
-                <option value="Germany">
-                <option value="Ghana">
-                <option value="Gibraltar">
-                <option value="Greece">
-                <option value="Greenland">
-                <option value="Grenada">
-                <option value="Guadeloupe">
-                <option value="Guam">
-                <option value="Guatemala">
-                <option value="Guinea">
-                <option value="Guinea-bissau">
-                <option value="Guyana">
-                <option value="Haiti">
-                <option value="Heard Island and Mcdonald Islands">
-                <option value="Holy See (Vatican City State)">
-                <option value="Honduras">
-                <option value="Hong Kong">
-                <option value="Hungary">
-                <option value="Iceland">
-                <option value="India">
-                <option value="Indonesia">
-                <option value="Iran, Islamic Republic of">
-                <option value="Iraq">
-                <option value="Ireland">
-                <option value="Israel">
-                <option value="Italy">
-                <option value="Jamaica">
-                <option value="Japan">
-                <option value="Jordan">
-                <option value="Kazakhstan">
-                <option value="Kenya">
-                <option value="Kiribati">
-                <option value="Korea, Democratic People's Republic of">
-                <option value="Korea, Republic of">
-                <option value="Kuwait">
-                <option value="Kyrgyzstan">
-                <option value="Lao People's Democratic Republic">
-                <option value="Latvia">
-                <option value="Lebanon">
-                <option value="Lesotho">
-                <option value="Liberia">
-                <option value="Libyan Arab Jamahiriya">
-                <option value="Liechtenstein">
-                <option value="Lithuania">
-                <option value="Luxembourg">
-                <option value="Macao">
-                <option value="Macedonia, The Former Yugoslav Republic of">
-                <option value="Madagascar">
-                <option value="Malawi">
-                <option value="Malaysia">
-                <option value="Maldives">
-                <option value="Mali">
-                <option value="Malta">
-                <option value="Marshall Islands">
-                <option value="Martinique">
-                <option value="Mauritania">
-                <option value="Mauritius">
-                <option value="Mayotte">
-                <option value="Mexico">
-                <option value="Micronesia, Federated States of">
-                <option value="Moldova, Republic of">
-                <option value="Monaco">
-                <option value="Mongolia">
-                <option value="Montserrat">
-                <option value="Morocco">
-                <option value="Mozambique">
-                <option value="Myanmar">
-                <option value="Namibia">
-                <option value="Nauru">
-                <option value="Nepal">
-                <option value="Netherlands">
-                <option value="Netherlands Antilles">
-                <option value="New Caledonia">
-                <option value="New Zealand">
-                <option value="Nicaragua">
-                <option value="Niger">
-                <option value="Nigeria">
-                <option value="Niue">
-                <option value="Norfolk Island">
-                <option value="Northern Mariana Islands">
-                <option value="Norway">
-                <option value="Oman">
-                <option value="Pakistan">
-                <option value="Palau">
-                <option value="Palestinian Territory, Occupied">
-                <option value="Panama">
-                <option value="Papua New Guinea">
-                <option value="Paraguay">
-                <option value="Peru">
-                <option value="Philippines">
-                <option value="Pitcairn">
-                <option value="Poland">
-                <option value="Portugal">
-                <option value="Puerto Rico">
-                <option value="Qatar">
-                <option value="Reunion">
-                <option value="Romania">
-                <option value="Russian Federation">
-                <option value="Rwanda">
-                <option value="Saint Helena">
-                <option value="Saint Kitts and Nevis">
-                <option value="Saint Lucia">
-                <option value="Saint Pierre and Miquelon">
-                <option value="Saint Vincent and The Grenadines">
-                <option value="Samoa">
-                <option value="San Marino">
-                <option value="Sao Tome and Principe">
-                <option value="Saudi Arabia">
-                <option value="Senegal">
-                <option value="Serbia and Montenegro">
-                <option value="Seychelles">
-                <option value="Sierra Leone">
-                <option value="Singapore">
-                <option value="Slovakia">
-                <option value="Slovenia">
-                <option value="Solomon Islands">
-                <option value="Somalia">
-                <option value="South Africa">
-                <option value="South Georgia and The South Sandwich Islands">
-                <option value="Spain">
-                <option value="Sri Lanka">
-                <option value="Sudan">
-                <option value="Suriname">
-                <option value="Svalbard and Jan Mayen">
-                <option value="Swaziland">
-                <option value="Sweden">
-                <option value="Switzerland">
-                <option value="Syrian Arab Republic">
-                <option value="Taiwan, Province of China">
-                <option value="Tajikistan">
-                <option value="Tanzania, United Republic of">
-                <option value="Thailand">
-                <option value="Timor-leste">
-                <option value="Togo">
-                <option value="Tokelau">
-                <option value="Tonga">
-                <option value="Trinidad and Tobago">
-                <option value="Tunisia">
-                <option value="Turkey">
-                <option value="Turkmenistan">
-                <option value="Turks and Caicos Islands">
-                <option value="Tuvalu">
-                <option value="Uganda">
-                <option value="Ukraine">
-                <option value="United Arab Emirates">
-                <option value="United Kingdom">
-                <option value="United States">
-                <option value="United States Minor Outlying Islands">
-                <option value="Uruguay">
-                <option value="Uzbekistan">
-                <option value="Vanuatu">
-                <option value="Venezuela">
-                <option value="Viet Nam">
-                <option value="Virgin Islands, British">
-                <option value="Virgin Islands, U.S">
-                <option value="Wallis and Futuna">
-                <option value="Western Sahara">
-                <option value="Yemen">
-                <option value="Zambia">
-                <option value="Zimbabwe">
-            </datalist>
-            <p>By providing this information, you are opting to receive emails from Taylor Nation with news, special
-                offers, promotions and messages tailored to your interests, and you agree to the UMG/Taylor Nation
-                <a href="#privacy">privacy policy</a> and <a href="#terms">terms of use</a>.<br>Fields marked
-                with an asterisk (*) are required. International customers will receive an email to
-                confirm your subscription to above mailing list.</p>
-            <input class="button" type="submit" value="submit">
-        </form>
+            <a class="button" href="https://store.taylorswift.com/" target="_blank">view all items</a>
+        </div>
+
+        <div id="newsletter">
+            <form action="thankyou.html" method="post">
+                <p>SIGN UP TO RECEIVE UPDATES</p>
+                <div id="form">
+                    <input type="email" id="email" name="email" placeholder="email address*" required>
+                    <input list="country" name="country" placeholder="select your country*" required>
+                </div>
+                <datalist id="country">
+                    <option value="Afghanistan">
+                    <option value="Albania">
+                    <option value="Algeria">
+                    <option value="American Samoa">
+                    <option value="Andorra">
+                    <option value="Angola">
+                    <option value="Anguilla">
+                    <option value="Antarctica">
+                    <option value="Antigua and Barbuda">
+                    <option value="Argentina">
+                    <option value="Armenia">
+                    <option value="Aruba">
+                    <option value="Australia">
+                    <option value="Austria">
+                    <option value="Azerbaijan">
+                    <option value="Bahamas">
+                    <option value="Bahrain">
+                    <option value="Bangladesh">
+                    <option value="Barbados">
+                    <option value="Belarus">
+                    <option value="Belgium">
+                    <option value="Belize">
+                    <option value="Benin">
+                    <option value="Bermuda">
+                    <option value="Bhutan">
+                    <option value="Bolivia">
+                    <option value="Bosnia and Herzegovina">
+                    <option value="Botswana">
+                    <option value="Bouvet Island">
+                    <option value="Brazil">
+                    <option value="British Indian Ocean Territory">
+                    <option value="Brunei Darussalam">
+                    <option value="Bulgaria">
+                    <option value="Burkina Faso">
+                    <option value="Burundi">
+                    <option value="Cambodia">
+                    <option value="Cameroon">
+                    <option value="Canada">
+                    <option value="Cape Verde">
+                    <option value="Cayman Islands">
+                    <option value="Central African Republic">
+                    <option value="Chad">
+                    <option value="Chile">
+                    <option value="China">
+                    <option value="Christmas Island">
+                    <option value="Cocos (Keeling) Islands">
+                    <option value="Colombia">
+                    <option value="Comoros">
+                    <option value="Congo">
+                    <option value="Congo, The Democratic Republic of The">
+                    <option value="Cook Islands">
+                    <option value="Costa Rica">
+                    <option value="Cote D'ivoire">
+                    <option value="Croatia">
+                    <option value="Cuba">
+                    <option value="Cyprus">
+                    <option value="Czech Republic">
+                    <option value="Denmark">
+                    <option value="Djibouti">
+                    <option value="Dominica">
+                    <option value="Dominican Republic">
+                    <option value="Ecuador">
+                    <option value="Egypt">
+                    <option value="El Salvador">
+                    <option value="Equatorial Guinea">
+                    <option value="Eritrea">
+                    <option value="Estonia">
+                    <option value="Ethiopia">
+                    <option value="Falkland Islands (Malvinas)">
+                    <option value="Faroe Islands">
+                    <option value="Fiji">
+                    <option value="Finland">
+                    <option value="France">
+                    <option value="French Guiana">
+                    <option value="French Polynesia">
+                    <option value="French Southern Territories">
+                    <option value="Gabon">
+                    <option value="Gambia">
+                    <option value="Georgia">
+                    <option value="Germany">
+                    <option value="Ghana">
+                    <option value="Gibraltar">
+                    <option value="Greece">
+                    <option value="Greenland">
+                    <option value="Grenada">
+                    <option value="Guadeloupe">
+                    <option value="Guam">
+                    <option value="Guatemala">
+                    <option value="Guinea">
+                    <option value="Guinea-bissau">
+                    <option value="Guyana">
+                    <option value="Haiti">
+                    <option value="Heard Island and Mcdonald Islands">
+                    <option value="Holy See (Vatican City State)">
+                    <option value="Honduras">
+                    <option value="Hong Kong">
+                    <option value="Hungary">
+                    <option value="Iceland">
+                    <option value="India">
+                    <option value="Indonesia">
+                    <option value="Iran, Islamic Republic of">
+                    <option value="Iraq">
+                    <option value="Ireland">
+                    <option value="Israel">
+                    <option value="Italy">
+                    <option value="Jamaica">
+                    <option value="Japan">
+                    <option value="Jordan">
+                    <option value="Kazakhstan">
+                    <option value="Kenya">
+                    <option value="Kiribati">
+                    <option value="Korea, Democratic People's Republic of">
+                    <option value="Korea, Republic of">
+                    <option value="Kuwait">
+                    <option value="Kyrgyzstan">
+                    <option value="Lao People's Democratic Republic">
+                    <option value="Latvia">
+                    <option value="Lebanon">
+                    <option value="Lesotho">
+                    <option value="Liberia">
+                    <option value="Libyan Arab Jamahiriya">
+                    <option value="Liechtenstein">
+                    <option value="Lithuania">
+                    <option value="Luxembourg">
+                    <option value="Macao">
+                    <option value="Macedonia, The Former Yugoslav Republic of">
+                    <option value="Madagascar">
+                    <option value="Malawi">
+                    <option value="Malaysia">
+                    <option value="Maldives">
+                    <option value="Mali">
+                    <option value="Malta">
+                    <option value="Marshall Islands">
+                    <option value="Martinique">
+                    <option value="Mauritania">
+                    <option value="Mauritius">
+                    <option value="Mayotte">
+                    <option value="Mexico">
+                    <option value="Micronesia, Federated States of">
+                    <option value="Moldova, Republic of">
+                    <option value="Monaco">
+                    <option value="Mongolia">
+                    <option value="Montserrat">
+                    <option value="Morocco">
+                    <option value="Mozambique">
+                    <option value="Myanmar">
+                    <option value="Namibia">
+                    <option value="Nauru">
+                    <option value="Nepal">
+                    <option value="Netherlands">
+                    <option value="Netherlands Antilles">
+                    <option value="New Caledonia">
+                    <option value="New Zealand">
+                    <option value="Nicaragua">
+                    <option value="Niger">
+                    <option value="Nigeria">
+                    <option value="Niue">
+                    <option value="Norfolk Island">
+                    <option value="Northern Mariana Islands">
+                    <option value="Norway">
+                    <option value="Oman">
+                    <option value="Pakistan">
+                    <option value="Palau">
+                    <option value="Palestinian Territory, Occupied">
+                    <option value="Panama">
+                    <option value="Papua New Guinea">
+                    <option value="Paraguay">
+                    <option value="Peru">
+                    <option value="Philippines">
+                    <option value="Pitcairn">
+                    <option value="Poland">
+                    <option value="Portugal">
+                    <option value="Puerto Rico">
+                    <option value="Qatar">
+                    <option value="Reunion">
+                    <option value="Romania">
+                    <option value="Russian Federation">
+                    <option value="Rwanda">
+                    <option value="Saint Helena">
+                    <option value="Saint Kitts and Nevis">
+                    <option value="Saint Lucia">
+                    <option value="Saint Pierre and Miquelon">
+                    <option value="Saint Vincent and The Grenadines">
+                    <option value="Samoa">
+                    <option value="San Marino">
+                    <option value="Sao Tome and Principe">
+                    <option value="Saudi Arabia">
+                    <option value="Senegal">
+                    <option value="Serbia and Montenegro">
+                    <option value="Seychelles">
+                    <option value="Sierra Leone">
+                    <option value="Singapore">
+                    <option value="Slovakia">
+                    <option value="Slovenia">
+                    <option value="Solomon Islands">
+                    <option value="Somalia">
+                    <option value="South Africa">
+                    <option value="South Georgia and The South Sandwich Islands">
+                    <option value="Spain">
+                    <option value="Sri Lanka">
+                    <option value="Sudan">
+                    <option value="Suriname">
+                    <option value="Svalbard and Jan Mayen">
+                    <option value="Swaziland">
+                    <option value="Sweden">
+                    <option value="Switzerland">
+                    <option value="Syrian Arab Republic">
+                    <option value="Taiwan, Province of China">
+                    <option value="Tajikistan">
+                    <option value="Tanzania, United Republic of">
+                    <option value="Thailand">
+                    <option value="Timor-leste">
+                    <option value="Togo">
+                    <option value="Tokelau">
+                    <option value="Tonga">
+                    <option value="Trinidad and Tobago">
+                    <option value="Tunisia">
+                    <option value="Turkey">
+                    <option value="Turkmenistan">
+                    <option value="Turks and Caicos Islands">
+                    <option value="Tuvalu">
+                    <option value="Uganda">
+                    <option value="Ukraine">
+                    <option value="United Arab Emirates">
+                    <option value="United Kingdom">
+                    <option value="United States">
+                    <option value="United States Minor Outlying Islands">
+                    <option value="Uruguay">
+                    <option value="Uzbekistan">
+                    <option value="Vanuatu">
+                    <option value="Venezuela">
+                    <option value="Viet Nam">
+                    <option value="Virgin Islands, British">
+                    <option value="Virgin Islands, U.S">
+                    <option value="Wallis and Futuna">
+                    <option value="Western Sahara">
+                    <option value="Yemen">
+                    <option value="Zambia">
+                    <option value="Zimbabwe">
+                </datalist>
+                <p>By providing this information, you are opting to receive emails from Taylor Nation with news, special
+                    offers, promotions and messages tailored to your interests, and you agree to the UMG/Taylor Nation
+                    <a href="#privacy">privacy policy</a> and <a href="#terms">terms of use</a>.<br>Fields marked
+                    with an asterisk (*) are required. International customers will receive an email to
+                    confirm your subscription to above mailing list.</p>
+                <input class="button" type="submit" value="submit">
+            </form>
+        </div>
+
+        <footer>
+            <div class="legal">
+                <a href="https://www.taylorswift.com/">© 2020 Taylor Nation, LLC</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms & Conditions</a>
+                <a href="#accessibility">Accessibility</a>
+                <a href="#ccpa">Do Not Sell My Personal Information</a>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com/TaylorSwift" target="_blank"><span
+                        class="iconify icon:entypo-social:facebook-with-circle"
+                ></span></a>
+                <a href="https://instagram.com/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:instagram-with-circle">
+            </span></a>
+                <a href="http://taylorswift.tumblr.com/" target="_blank"><span
+                        class="iconify icon:entypo-social:tumblr-with-circle">
+            </span></a>
+                <a href="https://twitter.com/taylorswift13" target="_blank"><span
+                        class="iconify icon:entypo-social:twitter-with-circle">
+            </span></a>
+                <a href="https://youtube.com/user/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:youtube-with-circle">
+            </span></a>
+                <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
+                        class="iconify icon:fa-brands:snapchat">
+            </span></a>
+                <a href="https://store.taylorswift.com/" target="_blank"><span
+                        class="iconify icon:el:shopping-cart-sign">
+            </span></a>
+            </div>
+        </footer>
     </div>
 
-    <footer>
-        <div class="legal">
-            <a href="https://www.taylorswift.com/">© 2020 Taylor Nation, LLC</a>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms & Conditions</a>
-            <a href="#accessibility">Accessibility</a>
-            <a href="#ccpa">Do Not Sell My Personal Information</a>
+    <div id="sidenav">
+        <div class="menu">
+            <a href="#merch" onclick="closeNav()">Merch</a>
+            <a href="#videos" onclick="closeNav()">Videos</a>
+            <a href="events.html" onclick="closeNav()">Events</a>
+            <a href="#newsletter" onclick="closeNav()">Newsletter</a>
+            <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
         </div>
         <div class="social">
             <a href="https://facebook.com/TaylorSwift" target="_blank"><span
@@ -511,42 +546,9 @@
             <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
                     class="iconify icon:fa-brands:snapchat">
             </span></a>
-            <a href="https://store.taylorswift.com/" target="_blank"><span
-                    class="iconify icon:el:shopping-cart-sign">
+            <a href="https://store.taylorswift.com/" target="_blank"><span class="iconify icon:el:shopping-cart-sign">
             </span></a>
         </div>
-    </footer>
-</div>
-
-<div id="sidenav">
-    <div class="menu">
-        <a href="#merch" onclick="closeNav()">Merch</a>
-        <a href="#videos" onclick="closeNav()">Videos</a>
-        <a href="events.html" onclick="closeNav()">Events</a>
-        <a href="#newsletter" onclick="closeNav()">Newsletter</a>
-        <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
-    </div>
-    <div class="social">
-        <a href="https://facebook.com/TaylorSwift" target="_blank"><span
-                class="iconify icon:entypo-social:facebook-with-circle"
-        ></span></a>
-        <a href="https://instagram.com/taylorswift" target="_blank"><span
-                class="iconify icon:entypo-social:instagram-with-circle">
-            </span></a>
-        <a href="http://taylorswift.tumblr.com/" target="_blank"><span
-                class="iconify icon:entypo-social:tumblr-with-circle">
-            </span></a>
-        <a href="https://twitter.com/taylorswift13" target="_blank"><span
-                class="iconify icon:entypo-social:twitter-with-circle">
-            </span></a>
-        <a href="https://youtube.com/user/taylorswift" target="_blank"><span
-                class="iconify icon:entypo-social:youtube-with-circle">
-            </span></a>
-        <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
-                class="iconify icon:fa-brands:snapchat">
-            </span></a>
-        <a href="https://store.taylorswift.com/" target="_blank"><span class="iconify icon:el:shopping-cart-sign">
-            </span></a>
     </div>
 </div>
 
@@ -554,13 +556,18 @@
 function openNav() {
     document.getElementById("sidenav").style.width = "250px";
     document.getElementById("fill").style.zIndex = "10";
-    // document.getElementById("main").style.transform = "translate(250px)";
+    document.getElementById("main").style.transform = "translateX(250px)";
+    document.getElementById("main").style.transition = "transform 0.5s";
+    // document.getElementById("main").style.overflow = "hidden";
+    // document.getElementById("sidenav").style.overflow = "hidden";
 }
 
 function closeNav() {
     document.getElementById("sidenav").style.width = "0";
     document.getElementById("fill").style.zIndex = "-5";
-    // document.getElementById("main").style.transform = "translate(0)";
+    document.getElementById("main").style.removeProperty('transform');
+    // document.getElementById("main").style.overflow = "visible";
+    // document.getElementById("sidenav").style.overflow = "visible";
 }
 </script>
 
