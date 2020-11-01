@@ -76,12 +76,12 @@ header > div {
     text-transform: lowercase;
 }
 
-/* Styling the Banner */
+/* Styling the Banner section */
 #banner {
     position: relative;
 }
 
-#banner-img img {
+#banner picture img {
     display: block;
     width: 100%;
 }
@@ -92,8 +92,7 @@ header > div {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 20px 0 50px;
-    overflow: hidden;
+    padding-top: 20px;
 }
 
 .white-text {
@@ -137,10 +136,7 @@ header > div {
 
 /* Styling the Videos section */
 .slideshow-container {
-    width: 100%;
-    height: auto;
     position: relative;
-    margin: 0;
 }
 
 .mySlides {
@@ -259,8 +255,6 @@ header > div {
     position: relative;
     background: #d3d2d7 url("images/bg-top.jpg") no-repeat left top;
     background-size: contain;
-    margin: 0;
-    padding-top: 70px;
 }
 
 #merch h2 {
@@ -270,6 +264,7 @@ header > div {
     margin: 0;
     text-shadow: 0 0 19px #4e4c4c;
     letter-spacing: .1em;
+    padding-top: 70px;
 }
 
 #merch > p {
@@ -281,7 +276,6 @@ header > div {
 }
 
 #merch-container {
-    position: relative;
     display: flex;
     align-content: center;
     align-items: baseline;
@@ -320,19 +314,13 @@ header > div {
 
 /* Styling the Newsletter section */
 #newsletter {
-    position: relative;
     background: url("images/WoodsBackground.jpg") no-repeat center;
     background-size: cover;
-    background-origin: padding-box;
-    margin: 0;
     color: black;
     text-align: center;
 }
 
 #newsletter form {
-    position: relative;
-    top: 0;
-    left: 0;
     padding-top: 60px;
     padding-bottom: 100px;
 }
@@ -340,13 +328,11 @@ header > div {
 form p:first-child {
     font-size: calc(2vw + 1em);
     letter-spacing: .2em;
-    margin: 25px 35px;
 }
 
 form p {
-    margin: 25px 35px 0;
+    margin: 25px 35px;
     font-size: 0.9em;
-    line-height: 1.5;
     letter-spacing: 0;
 }
 
@@ -382,10 +368,8 @@ form p a {
 
 #newsletter .button {
     position: relative;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    border-radius: 0;
+    display: flex;
+    margin: auto;
 }
 
 /* Styling the Footer */
@@ -555,8 +539,18 @@ footer > div {
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(34,34,34,0.5);
+    background: rgba(34, 34, 34, 0.5);
     z-index: -2;
+}
+
+/* To make anchor links scroll past the sticky nav bar */
+#newsletter:before, #videos:before, #merch:before {
+    content: '';
+    display: block;
+    position: relative;
+    width: 0;
+    height: 62px;
+    margin-top: -62px;
 }
 
 /* STYLING LARGER PHONES */
@@ -685,11 +679,4 @@ footer > div {
         left: 55%;
         transform: translate(0);
     }
-}
-
-a.anchor {
-    display: block;
-    position: relative;
-    top: -62px;
-    visibility: hidden;
 }
