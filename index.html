@@ -586,7 +586,6 @@ function plusSlides(n) {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -596,11 +595,7 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
 }
 </script>
 
@@ -608,7 +603,7 @@ function showSlides(n) {
 <script>
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-1') {
+        if (elem && elem.id === 'video-1') {
             document.getElementById('thumb-1').style.display = 'none';
             clearInterval(monitor);
         }
@@ -618,7 +613,7 @@ function showSlides(n) {
 <script>
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-2') {
+        if (elem && elem.id === 'video-2') {
             document.getElementById('thumb-2').style.display = 'none';
             clearInterval(monitor);
         }
@@ -628,7 +623,7 @@ function showSlides(n) {
 <script>
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-3') {
+        if (elem && elem.id === 'video-3') {
             document.getElementById('thumb-3').style.display = 'none';
             clearInterval(monitor);
         }
@@ -638,7 +633,7 @@ function showSlides(n) {
 <script>
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-4') {
+        if (elem && elem.id === 'video-4') {
             document.getElementById('thumb-4').style.display = 'none';
             clearInterval(monitor);
         }
@@ -648,7 +643,7 @@ function showSlides(n) {
 <script>
     var monitor = setInterval(function () {
         var elem = document.activeElement;
-        if (elem && elem.id == 'video-5') {
+        if (elem && elem.id === 'video-5') {
             document.getElementById('thumb-5').style.display = 'none';
             clearInterval(monitor);
         }
