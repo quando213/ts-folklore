@@ -486,6 +486,14 @@ footer > div {
     transform: translate(-50%);
 }
 
+@media screen and (min-aspect-ratio: 16/9) and (max-height: 860px) {
+    #thankyou .button {
+        position: relative;
+        left: 55%;
+        transform: translate(0);
+    }
+}
+
 /* Styling the Sidenav */
 #sidenav {
     display: flex;
@@ -680,13 +688,5 @@ footer > div {
 
     .legal a {
         margin: 0 8px;
-    }
-}
-
-@media screen and (min-aspect-ratio: 16/9) and (max-height: 860px) {
-    #thankyou .button {
-        position: relative;
-        left: 55%;
-        transform: translate(0);
     }
 }
