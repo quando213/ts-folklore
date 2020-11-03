@@ -111,7 +111,7 @@
                             <img src="images/thumb-cardigan-mv.jpg" alt="">
                             <div class="text">taylor swift - cardigan <br>(official video)</div>
                         </div>
-                        <iframe id="video-1" src="https://www.youtube.com/embed/K-a8s8OLBSE"
+                        <iframe id="video-content-1" src="https://www.youtube.com/embed/K-a8s8OLBSE"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                             <div class="text">taylor swift - betty (live from the 2020 academy of country music awards)
                             </div>
                         </div>
-                        <iframe id="video-2" src="https://www.youtube.com/embed/orXAg5dIMa8"
+                        <iframe id="video-content-2" src="https://www.youtube.com/embed/orXAg5dIMa8"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -134,7 +134,7 @@
                             <img src="images/thumb-the-lakes-lyric.jpg" alt="">
                             <div class="text">taylor swift - the lakes <br>(official lyric video)</div>
                         </div>
-                        <iframe id="video-3" src="https://www.youtube.com/embed/tOHcAc3r2kw"
+                        <iframe id="video-content-3" src="https://www.youtube.com/embed/tOHcAc3r2kw"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                             <img src="images/thumb-exile-lyric.jpg" alt="">
                             <div class="text">taylor swift - exile (feat. Bon Iver) (official lyric video)</div>
                         </div>
-                        <iframe id="video-4" src="https://www.youtube.com/embed/osdoLjUNFnA"
+                        <iframe id="video-content-4" src="https://www.youtube.com/embed/osdoLjUNFnA"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -154,6 +154,7 @@
                 <a class="next" onclick="plusSlides(1)"><img src="images/icon-arrow.png" alt="Next"></a>
             </div>
         </div>
+        <div id="printElem"></div>
 
         <div id="merch">
             <h2>Shop New Merchandise!</h2>
@@ -553,102 +554,6 @@
     </div>
 </div>
 
-<!-- Function to open and close sidebar -->
-<script>
-function openNav() {
-    document.getElementById("sidenav").style.width = "250px";
-    document.getElementById("fill").style.zIndex = "10";
-    document.getElementById("main").style.transform = "translateX(250px)";
-    document.getElementById("main").style.transition = "transform 0.5s";
-    // document.getElementById("main").style.overflow = "hidden";
-    // document.getElementById("sidenav").style.overflow = "hidden";
-}
-
-function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-    document.getElementById("fill").style.zIndex = "-5";
-    document.getElementById("main").style.removeProperty('transform');
-    // document.getElementById("main").style.overflow = "visible";
-    // document.getElementById("sidenav").style.overflow = "visible";
-}
-</script>
-
-<!-- Function for Videos section slideshow -->
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-    showSlides(slideIndex += n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
-</script>
-
-<!-- Functions for a click to bypass the thumbnail  -->
-<script>
-    var monitor = setInterval(function () {
-        var elem = document.activeElement;
-        if (elem && elem.id === 'video-1') {
-            document.getElementById('thumb-1').style.display = 'none';
-            clearInterval(monitor);
-        }
-    }, 100);
-</script>
-
-<script>
-    var monitor = setInterval(function () {
-        var elem = document.activeElement;
-        if (elem && elem.id === 'video-2') {
-            document.getElementById('thumb-2').style.display = 'none';
-            clearInterval(monitor);
-        }
-    }, 100);
-</script>
-
-<script>
-    var monitor = setInterval(function () {
-        var elem = document.activeElement;
-        if (elem && elem.id === 'video-3') {
-            document.getElementById('thumb-3').style.display = 'none';
-            clearInterval(monitor);
-        }
-    }, 100);
-</script>
-
-<script>
-    var monitor = setInterval(function () {
-        var elem = document.activeElement;
-        if (elem && elem.id === 'video-4') {
-            document.getElementById('thumb-4').style.display = 'none';
-            clearInterval(monitor);
-        }
-    }, 100);
-</script>
-
-<script>
-    var monitor = setInterval(function () {
-        var elem = document.activeElement;
-        if (elem && elem.id === 'video-5') {
-            document.getElementById('thumb-5').style.display = 'none';
-            clearInterval(monitor);
-        }
-    }, 100);
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>

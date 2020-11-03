@@ -161,7 +161,7 @@ header > div {
     z-index: 1;
 }
 
-.video-container img { /* the thumbnail */
+.video-container .thumb img { /* the thumbnail */
     position: absolute;
     top: 0;
     left: 0;
@@ -183,6 +183,7 @@ header > div {
     text-align: center;
     letter-spacing: 0.1em;
     z-index: 4;
+    pointer-events: none;
 }
 
 .text:after {
