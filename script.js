@@ -18,3 +18,18 @@ function closeNav() {
     document.getElementById("fill").style.zIndex = "-5";
     document.getElementById("main").style.removeProperty('transform');
 }
+
+// Function to close sticky Sign Up bar
+function closeSignUp() {
+    document.getElementById("signup").style.height = "0";
+    document.getElementById("signup-mini").style.visibility = "visible";
+}
+
+// Function to open full Sign Up page
+function openFullSignUp() {
+    document.getElementById("signup-full").style.display = "block";
+}
+
+function closeFullSignUp() {
+    document.getElementById("signup-full").style.display = "none";
+}

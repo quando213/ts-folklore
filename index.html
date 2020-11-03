@@ -23,9 +23,11 @@
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2a33a147b1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
 <nav>
     <div id="menu">
         <a href="#merch" onclick="closeNav()">Merch</a>
@@ -237,9 +239,72 @@
         <section id="newsletter">
             <form action="thankyou.html" method="post">
                 <p>SIGN UP TO RECEIVE UPDATES</p>
-                <div id="form">
-                    <input type="email" id="email" name="email" placeholder="email address*" required>
+                <div class="signup-form">
+                    <input type="email" name="email" placeholder="email address*" required>
                     <input list="country" name="country" placeholder="select your country*" required>
+                </div>
+                <p>By providing this information, you are opting to receive emails from Taylor Nation with news, special
+                    offers, promotions and messages tailored to your interests, and you agree to the UMG/Taylor Nation
+                    <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a>.<br>Fields
+                    marked
+                    with an asterisk (*) are required. International customers will receive an email to
+                    confirm your subscription to above mailing list.</p>
+                <input class="button" type="submit" value="submit">
+            </form>
+        </section>
+
+        <footer>
+            <div class="menu-legal">
+                <a href="https://www.taylorswift.com/">© 2020 Taylor Nation, LLC</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="accessibility.html">Accessibility</a>
+                <a href="ccpa.html">Do Not Sell My Personal Information</a>
+            </div>
+            <div id="social-btm">
+                <a href="https://facebook.com/TaylorSwift" target="_blank"><span
+                        class="iconify icon:entypo-social:facebook-with-circle"
+                ></span></a>
+                <a href="https://instagram.com/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:instagram-with-circle">
+            </span></a>
+                <a href="http://taylorswift.tumblr.com/" target="_blank"><span
+                        class="iconify icon:entypo-social:tumblr-with-circle">
+            </span></a>
+                <a href="https://twitter.com/taylorswift13" target="_blank"><span
+                        class="iconify icon:entypo-social:twitter-with-circle">
+            </span></a>
+                <a href="https://youtube.com/user/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:youtube-with-circle">
+            </span></a>
+                <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
+                        class="iconify icon:fa-brands:snapchat">
+            </span></a>
+                <a href="https://store.taylorswift.com/" target="_blank"><span
+                        class="iconify icon:el:shopping-cart-sign">
+            </span></a>
+            </div>
+        </footer>
+
+        <div id="signup">
+            <span>Sign up to receive updates and special offers!</span>
+            <a href="javascript:void(0)" onclick="openFullSignUp()">
+                <button>yes, i'm in <span class="iconify" data-icon="entypo:mail" data-inline="false"></span></button>
+            </a>
+            <div id="close-signup" onclick="closeSignUp()">&#10006;</div>
+        </div>
+
+        <div id="signup-mini" onclick="openFullSignUp()">
+            <span>Yes, I'm in</span>
+            <i class="fas fa-envelope"></i>
+        </div>
+
+        <div id="signup-full">
+            <form action="thankyou.html" method="post">
+                <p>SIGN UP TO RECEIVE UPDATES</p>
+                <div class="signup-form">
+                    <input type="email" name="email" placeholder="Email Address*" required>
+                    <input list="country" name="country" placeholder="Select Your Country*" required>
                 </div>
                 <datalist id="country">
                     <option value="Afghanistan">
@@ -482,49 +547,24 @@
                     <option value="Zambia">
                     <option value="Zimbabwe">
                 </datalist>
-                <p>By providing this information, you are opting to receive emails from Taylor Nation with news, special
+                <p class="desc">By providing this information, you are opting to receive emails from Taylor Nation with news, special
                     offers, promotions and messages tailored to your interests, and you agree to the UMG/Taylor Nation
                     <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a>.<br>Fields
                     marked
                     with an asterisk (*) are required. International customers will receive an email to
                     confirm your subscription to above mailing list.</p>
-                <input class="button" type="submit" value="submit">
+                <div id="button-thanks-row">
+                    <input class="button" type="submit" value="submit">
+                    <a href="javascript:void(0)" onclick="closeFullSignUp()">
+                        <div id="no-thanks">No Thanks, Continue to Site</div>
+                    </a>
+                </div>
+                <div id="close-signup-full" onclick="closeFullSignUp()">&#10006;</div>
             </form>
-        </section>
+        </div>
 
-        <footer>
-            <div class="menu-legal">
-                <a href="https://www.taylorswift.com/">© 2020 Taylor Nation, LLC</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-                <a href="accessibility.html">Accessibility</a>
-                <a href="ccpa.html">Do Not Sell My Personal Information</a>
-            </div>
-            <div id="social-btm">
-                <a href="https://facebook.com/TaylorSwift" target="_blank"><span
-                        class="iconify icon:entypo-social:facebook-with-circle"
-                ></span></a>
-                <a href="https://instagram.com/taylorswift" target="_blank"><span
-                        class="iconify icon:entypo-social:instagram-with-circle">
-            </span></a>
-                <a href="http://taylorswift.tumblr.com/" target="_blank"><span
-                        class="iconify icon:entypo-social:tumblr-with-circle">
-            </span></a>
-                <a href="https://twitter.com/taylorswift13" target="_blank"><span
-                        class="iconify icon:entypo-social:twitter-with-circle">
-            </span></a>
-                <a href="https://youtube.com/user/taylorswift" target="_blank"><span
-                        class="iconify icon:entypo-social:youtube-with-circle">
-            </span></a>
-                <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
-                        class="iconify icon:fa-brands:snapchat">
-            </span></a>
-                <a href="https://store.taylorswift.com/" target="_blank"><span
-                        class="iconify icon:el:shopping-cart-sign">
-            </span></a>
-            </div>
-        </footer>
     </div>
 </div>
+
 </body>
 </html>
