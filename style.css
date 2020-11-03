@@ -30,6 +30,29 @@ h2 {
     font-weight: normal;
 }
 
+h3 {
+    font-size: 1.9125em;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 16px 0 8px;
+}
+
+h5 {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0 0 8px;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 0 8px;
+}
+
 /* STYLING MOBILE MODE */
 
 /* Styling the Header */
@@ -466,13 +489,13 @@ footer > div {
     margin-left: 5px;
 }
 
-.legal {
+.menu-legal {
     display: flex;
     flex-flow: column;
     margin: 0 15px;
 }
 
-.legal a {
+.menu-legal a {
     color: white;
     font-size: 0.875em;
     font-style: italic;
@@ -540,6 +563,34 @@ footer > div {
     font-size: calc(1vw + 12px);
     left: 50%;
     transform: translate(-50%);
+}
+
+/* Styling the Legal pages */
+.legal {
+    position: relative;
+    padding: 131px 5% 5%;
+    max-width: 1280px;
+    min-height: calc(100vh - 5vw - 179px);
+    background: #d3d2d7;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.legal p {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+.legal a {
+    color: black;
+}
+
+.legal li a {
+    text-decoration: none;
+}
+
+.legal ul, .legal ol {
+    padding-left: 20px;
 }
 
 @media screen and (min-aspect-ratio: 16/9) and (max-height: 860px) {
@@ -623,7 +674,7 @@ footer > div {
         margin-right: 5px;
     }
 
-    .legal {
+    .menu-legal {
         flex-direction: row;
     }
 
@@ -691,7 +742,7 @@ footer > div {
         margin-bottom: 0;
     }
 
-    .legal a {
+    .menu-legal a {
         margin: 0 8px;
     }
 
