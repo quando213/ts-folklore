@@ -14,119 +14,19 @@
     <title>Taylor Swift | Home</title>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
+
 <body>
-<div id="main">
-    <a href="javascript:void(0)" onclick="closeNav()"> <!-- Click to close sidenav (mobile/tablet only) -->
-        <div id="fill"></div> <!-- To make the main page darker while opening sidenav -->
-    </a>
-
-    <header>
-        <div id="openbtn">
-            <span onclick="openNav()">&#9776;</span>
-        </div>
-        <div class="navbar">
-            <a href="index.html#merch">Merch</a>
-            <a href="index.html#videos">Videos</a>
-            <a href="events.html">Events</a>
-            <a href="index.html#newsletter">Newsletter</a>
-            <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
-        </div>
-
-        <div class="sitename">
-            <a href="./">Taylor Swift</a>
-        </div>
-
-        <div class="social">
-            <a href="https://facebook.com/TaylorSwift" target="_blank"><span
-                    class="iconify icon:entypo-social:facebook-with-circle"
-            ></span></a>
-            <a href="https://instagram.com/taylorswift" target="_blank"><span
-                    class="iconify icon:entypo-social:instagram-with-circle">
-            </span></a>
-            <a href="http://taylorswift.tumblr.com/" target="_blank"><span
-                    class="iconify icon:entypo-social:tumblr-with-circle">
-            </span></a>
-            <a href="https://twitter.com/taylorswift13" target="_blank"><span
-                    class="iconify icon:entypo-social:twitter-with-circle">
-            </span></a>
-            <a href="https://youtube.com/user/taylorswift" target="_blank"><span
-                    class="iconify icon:entypo-social:youtube-with-circle">
-            </span></a>
-            <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
-                    class="iconify icon:fa-brands:snapchat">
-            </span></a>
-            <a href="https://store.taylorswift.com/" target="_blank"><span
-                    class="iconify icon:el:shopping-cart-sign">
-            </span></a>
-        </div>
-
-        <div id="empty"></div> <!-- To make the sitename center -->
-    </header>
-
-    <div id="events">
-        <h2>2020 concert and festival details</h2>
-        <div class="text-box">
-            <p>Fighting COVID-19 is an unprecedented challenge for our global community and the safety and wellbeing of fans
-                should always be the top priority. Health organizations and governments around the world have strongly
-                discouraged large public gatherings for an undetermined period of time. With many events throughout the
-                world already cancelled, and upon direction from health officials in an effort to keep fans safe and help
-                prevent the spread of COVID-19, sadly the decision has been made to cancel all Taylor Swift live appearances
-                and performances this year.</p>
-            <p>The U.S. and Brazil shows will be rescheduled to take place in 2021, with dates to be announced later this
-                year. Tickets held for each of those shows will transfer to a new show date without action on the part of
-                ticket holders.</p>
-            <p>For those who desire refunds for tickets purchased for the U.S. Lover Fest shows, they will be available
-                starting May 1st subject to Ticketmaster terms. Watch for an email from Ticketmaster with instructions on
-                how to request one. For currently available information on all other performance dates, please click the
-                information button under each event below. Thank you so much for understanding. We look forward to seeing
-                you all, happy and healthy, in the future.</p>
-        </div>
-    </div>
-
-    <footer>
-        <div class="legal">
-            <a href="https://www.taylorswift.com/">© 2020 Taylor Nation, LLC</a>
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms & Conditions</a>
-            <a href="#accessibility">Accessibility</a>
-            <a href="#ccpa" target="_blank">Do Not Sell My Personal Information</a>
-        </div>
-        <div class="social">
-            <a href="https://facebook.com/TaylorSwift" target="_blank"><span
-                    class="iconify icon:entypo-social:facebook-with-circle"
-            ></span></a>
-            <a href="https://instagram.com/taylorswift" target="_blank"><span
-                    class="iconify icon:entypo-social:instagram-with-circle">
-            </span></a>
-            <a href="http://taylorswift.tumblr.com/" target="_blank"><span
-                    class="iconify icon:entypo-social:tumblr-with-circle">
-            </span></a>
-            <a href="https://twitter.com/taylorswift13" target="_blank"><span
-                    class="iconify icon:entypo-social:twitter-with-circle">
-            </span></a>
-            <a href="https://youtube.com/user/taylorswift" target="_blank"><span
-                    class="iconify icon:entypo-social:youtube-with-circle">
-            </span></a>
-            <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
-                    class="iconify icon:fa-brands:snapchat">
-            </span></a>
-            <a href="https://store.taylorswift.com/" target="_blank"><span
-                    class="iconify icon:el:shopping-cart-sign">
-            </span></a>
-        </div>
-    </footer>
-</div>
-
-<div id="sidenav">
-    <div class="menu">
-        <a href="index.html#merch">Merch</a>
-        <a href="index.html#videos">Videos</a>
-        <a href="events.html">Events</a>
-        <a href="index.html#newsletter">Newsletter</a>
+<nav>
+    <div id="menu">
+        <a href="index.html#merch" onclick="closeNav()">Merch</a>
+        <a href="index.html#videos" onclick="closeNav()">Videos</a>
+        <a href="events.html" onclick="closeNav()">Events</a>
+        <a href="index.html#newsletter" onclick="closeNav()">Newsletter</a>
         <a href="http://taylor.lnk.to/vote" target="_blank">Vote</a>
     </div>
-    <div class="social">
+    <div id="social-top">
         <a href="https://facebook.com/TaylorSwift" target="_blank"><span
                 class="iconify icon:entypo-social:facebook-with-circle"
         ></span></a>
@@ -148,19 +48,79 @@
         <a href="https://store.taylorswift.com/" target="_blank"><span class="iconify icon:el:shopping-cart-sign">
             </span></a>
     </div>
+</nav>
+
+<div id="outer-wrapper">
+    <div id="main">
+        <a href="javascript:void(0)" onclick="closeNav()"> <!-- Click to close sidenav (mobile/tablet only) -->
+            <div id="fill"></div> <!-- To make the main page darker while opening sidenav -->
+        </a>
+
+        <header>
+            <div id="openbtn">
+                <span onclick="openNav()">&#9776;</span>
+            </div>
+
+            <div id="sitename">
+                <a href="./">Taylor Swift</a>
+            </div>
+
+            <div id="empty"></div> <!-- To make the sitename center -->
+        </header>
+
+        <div id="events">
+            <h2>2020 concert and festival details</h2>
+            <div class="text-box">
+                <p>Fighting COVID-19 is an unprecedented challenge for our global community and the safety and wellbeing of fans
+                    should always be the top priority. Health organizations and governments around the world have strongly
+                    discouraged large public gatherings for an undetermined period of time. With many events throughout the
+                    world already cancelled, and upon direction from health officials in an effort to keep fans safe and help
+                    prevent the spread of COVID-19, sadly the decision has been made to cancel all Taylor Swift live appearances
+                    and performances this year.</p>
+                <p>The U.S. and Brazil shows will be rescheduled to take place in 2021, with dates to be announced later this
+                    year. Tickets held for each of those shows will transfer to a new show date without action on the part of
+                    ticket holders.</p>
+                <p>For those who desire refunds for tickets purchased for the U.S. Lover Fest shows, they will be available
+                    starting May 1st subject to Ticketmaster terms. Watch for an email from Ticketmaster with instructions on
+                    how to request one. For currently available information on all other performance dates, please click the
+                    information button under each event below. Thank you so much for understanding. We look forward to seeing
+                    you all, happy and healthy, in the future.</p>
+            </div>
+        </div>
+
+        <footer>
+            <div class="legal">
+                <a href="https://www.taylorswift.com/">© 2020 Taylor Nation, LLC</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms & Conditions</a>
+                <a href="#accessibility">Accessibility</a>
+                <a href="#ccpa">Do Not Sell My Personal Information</a>
+            </div>
+            <div id="social-btm">
+                <a href="https://facebook.com/TaylorSwift" target="_blank"><span
+                        class="iconify icon:entypo-social:facebook-with-circle"
+                ></span></a>
+                <a href="https://instagram.com/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:instagram-with-circle">
+            </span></a>
+                <a href="http://taylorswift.tumblr.com/" target="_blank"><span
+                        class="iconify icon:entypo-social:tumblr-with-circle">
+            </span></a>
+                <a href="https://twitter.com/taylorswift13" target="_blank"><span
+                        class="iconify icon:entypo-social:twitter-with-circle">
+            </span></a>
+                <a href="https://youtube.com/user/taylorswift" target="_blank"><span
+                        class="iconify icon:entypo-social:youtube-with-circle">
+            </span></a>
+                <a href="https://www.snapchat.com/add/taylorswift" target="_blank"><span
+                        class="iconify icon:fa-brands:snapchat">
+            </span></a>
+                <a href="https://store.taylorswift.com/" target="_blank"><span
+                        class="iconify icon:el:shopping-cart-sign">
+            </span></a>
+            </div>
+        </footer>
+    </div>
 </div>
-
-<script> /* Open and close sidebar */
-function openNav() {
-    document.getElementById("sidenav").style.width = "250px";
-    document.getElementById("fill").style.zIndex = "10";
-}
-
-function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-    document.getElementById("fill").style.zIndex = "-5";
-}
-</script>
-
 </body>
 </html>
