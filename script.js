@@ -1,13 +1,17 @@
 <!-- Function to open and close sidebar -->
 function openNav() {
-    document.getElementById("sidenav").style.width = "250px";
+    document.getElementsByTagName("nav")[0].style.width = "250px";
+    document.getElementById("menu").style.opacity = "1";
+    document.getElementById("social-top").style.opacity = "1";
     document.getElementById("fill").style.zIndex = "10";
     document.getElementById("main").style.transform = "translateX(250px)";
     document.getElementById("main").style.transition = "transform 0.5s";
 }
 
 function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
+    document.getElementsByTagName("nav")[0].style.width = "0";
+    document.getElementById("menu").style.opacity = "0";
+    document.getElementById("social-top").style.opacity = "0";
     document.getElementById("fill").style.zIndex = "-5";
     document.getElementById("main").style.removeProperty('transform');
 }
@@ -16,14 +20,13 @@ function closeNav() {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
 function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -38,9 +41,9 @@ function showSlides(n) {
 
 <!-- Function to hide the thumbnail when click on iframe -->
 setInterval(function () {
-    var elem = document.activeElement.id;
+    let elem = document.activeElement.id;
     if (!elem.indexOf('video-content')) {
-        var i = elem.substr(14);
+        let i = elem.substr(14);
         document.getElementById('thumb-' + i).style.display = 'none';
     }
 }, 100);

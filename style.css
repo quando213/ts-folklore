@@ -32,10 +32,6 @@ h2 {
 
 /* STYLING MOBILE MODE */
 
-.navbar, header .social {
-    display: none;
-}
-
 /* Styling the Header */
 header {
     display: flex;
@@ -56,10 +52,6 @@ header > div {
     display: flex;
 }
 
-.sitename {
-    justify-content: center;
-}
-
 #openbtn {
     font-size: 30px;
     cursor: pointer;
@@ -68,12 +60,80 @@ header > div {
     margin-right: auto;
 }
 
-.sitename a {
+#sitename {
+    justify-content: center;
+}
+
+#sitename a {
     color: white;
     font-size: 3em;
     font-style: italic;
     text-decoration: none;
     text-transform: lowercase;
+}
+
+/* Styling the Sidenav */
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #586457;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#menu a {
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.125em;
+    color: #fefefe;
+    display: block;
+    transition: 0.3s;
+}
+
+#social-top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 25px 5px;
+}
+
+#social-top .iconify {
+    width: 1.7em;
+    margin-right: 8px;
+}
+
+.iconify {
+    color: white;
+    height: auto;
+}
+
+/* Setting up the transition when opening sidenav */
+
+#fill {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(34, 34, 34, 0.5);
+    z-index: -2;
+}
+
+#outer-wrapper {
+    overflow: hidden;
+}
+
+#menu, #social-top {
+    transition: opacity 0.3s;
 }
 
 /* Styling the Banner section */
@@ -394,21 +454,16 @@ footer > div {
     display: flex;
 }
 
-.social {
+#social-btm {
     display: flex;
-    justify-content: center;
-    padding-right: 8px;
-    padding-bottom: 5px;
+    justify-content: flex-end;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
 
-.social > a {
-    padding-left: 5px;
-}
-
-.social .iconify {
-    color: white;
+#social-btm .iconify {
     width: 2.5em;
-    height: auto;
+    margin-left: 5px;
 }
 
 .legal {
@@ -495,66 +550,6 @@ footer > div {
     }
 }
 
-/* Styling the Sidenav */
-#sidenav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    background-color: #586457;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-#sidenav .menu a {
-    padding: 8px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.125em;
-    color: #fefefe;
-    display: block;
-    transition: 0.3s;
-}
-
-#sidenav a:hover {
-    color: #818181;
-}
-
-#sidenav .social {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-}
-
-#sidenav .iconify {
-    color: white;
-    width: 1.7em;
-    height: auto;
-    padding: 25px 2px;
-}
-
-/* Setting up the transition when opening sidenav */
-
-#fill {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(34, 34, 34, 0.5);
-    z-index: -2;
-}
-
-#outer-wrapper {
-    overflow: hidden;
-}
-
 /* To make anchor links scroll past the sticky nav bar */
 #newsletter:before, #videos:before {
     content: '';
@@ -571,7 +566,7 @@ footer > div {
         flex: 50%;
     }
 
-    .sitename a {
+    #sitename a {
         white-space: nowrap;
     }
 }
@@ -643,14 +638,19 @@ footer > div {
         display: none;
     }
 
-    .navbar {
+    nav {
+        overflow: visible;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
         display: flex;
         flex-flow: row nowrap;
-        align-content: center;
         margin-left: 8px;
     }
 
-    .navbar a {
+    #menu a {
         color: white;
         font-size: 1.5625em;
         font-style: italic;
@@ -659,13 +659,17 @@ footer > div {
         padding: 16px 8px;
     }
 
-    header .social {
-        display: flex;
+    #social-top {
+        position: fixed;
+        top: 0;
+        right: 0;
+        justify-content: flex-end;
+        margin: 16px 8px;
     }
 
-    .social {
-        justify-content: flex-end;
-        padding-bottom: 0;
+    #social-top .iconify {
+        width: 2.5em;
+        margin-right: 5px;
     }
 
     #newsletter p {
@@ -683,11 +687,28 @@ footer > div {
         padding: 4px 0;
     }
 
-    footer .social {
-        padding-bottom: 0;
+    #social-btm {
+        margin-bottom: 0;
     }
 
     .legal a {
         margin: 0 8px;
+    }
+
+    /* To make sure when instantly switching from mobile to desktop mode, elements are displayed correctly */
+    nav {
+        width: 0 !important;
+    }
+
+    #menu, #social-top {
+        opacity: 1 !important;
+    }
+
+    #fill {
+        z-index: -5 !important;
+    }
+
+    #main {
+        transform: none !important;
     }
 }
