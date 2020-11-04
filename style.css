@@ -2,6 +2,7 @@
     font-family: 'IM FELL DW Pica';
     src: url('fonts/IM_FELL_DW_Pica_Roman.woff') format('woff'),
     url('fonts/IM_FELL_DW_Pica_Roman.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -9,6 +10,7 @@
     src: url('fonts/IM_FELL_DW_Pica_Italic.woff') format('woff'),
     url('fonts/IM_FELL_DW_Pica_Italic.ttf') format('truetype');
     font-style: italic;
+    font-display: swap;
 }
 
 html {
