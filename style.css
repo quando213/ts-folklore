@@ -477,6 +477,13 @@ form p a {
     margin: auto;
 }
 
+form label {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+
 /* Styling the Footer */
 footer {
     display: flex;
