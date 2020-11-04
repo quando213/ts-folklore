@@ -42,4 +42,4 @@ function preloadImage(url)
     img.src=url;
 }
 
-preloadImage("/images/bg-forest.jpg")
+preloadImage("https://ts-folklore.herokuapp.com/images/bg-forest.jpg")
