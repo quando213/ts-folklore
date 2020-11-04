@@ -33,3 +33,13 @@ function openFullSignUp() {
 function closeFullSignUp() {
     document.getElementById("signup-full").style.display = "none";
 }
+
+// Function to preload the background of full Sign Up page
+
+function preloadImage(url)
+{
+    let img=new Image();
+    img.src=url;
+}
+
+preloadImage("/images/bg-forest.jpg")
