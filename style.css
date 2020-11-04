@@ -437,7 +437,7 @@ form p:first-child {
 
 form p {
     margin: 25px 35px;
-    font-size: 0.9em;
+    font-size: 1em;
     letter-spacing: 0;
 }
 
@@ -516,7 +516,7 @@ footer > div {
 
 .menu-legal a {
     color: white;
-    font-size: 0.875em;
+    font-size: 1em;
     font-style: italic;
     text-decoration: none;
     text-transform: lowercase;
