@@ -41,5 +41,3 @@ function preloadImage(url)
     let img=new Image();
     img.src=url;
 }
-
-preloadImage("https://ts-folklore.herokuapp.com/images/bg-forest.jpg")
