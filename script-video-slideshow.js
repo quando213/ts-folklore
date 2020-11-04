@@ -1,6 +1,24 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+
+function nextSlide() {
+	stopVideo();
+	slideIndex++;
+	showSlides(slideIndex);
+}
+
+function previousSlide() {
+	stopVideo();
+	slideIndex--;
+	showSlides(slideIndex);
+}
+
+function stopVideo() {
+	var currentVideoIndex = "#video-content-" + slideIndex;
+	$(currentVideoIndex)[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+}
+
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }

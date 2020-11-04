@@ -20,6 +20,7 @@
     <meta name="twitter:image:height" content="630"/>
     <link rel="icon" href="images/favicon_2.jpg">
     <title>Taylor Swift | Home</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -117,7 +118,7 @@
                             <img src="images/thumb-cardigan-mv.jpg" alt="">
                             <div class="text">taylor swift - cardigan <br>(official video)</div>
                         </div>
-                        <iframe id="video-content-1" src="https://www.youtube.com/embed/K-a8s8OLBSE"
+                        <iframe id="video-content-1" src="https://www.youtube.com/embed/K-a8s8OLBSE?enablejsapi=1&version=3&playerapiid=ytplayer"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -129,7 +130,7 @@
                             <div class="text">taylor swift - betty (live from the 2020 academy of country music awards)
                             </div>
                         </div>
-                        <iframe id="video-content-2" src="https://www.youtube.com/embed/orXAg5dIMa8"
+                        <iframe id="video-content-2" src="https://www.youtube.com/embed/orXAg5dIMa8?enablejsapi=1&version=3&playerapiid=ytplayer"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -140,7 +141,7 @@
                             <img src="images/thumb-the-lakes-lyric.jpg" alt="">
                             <div class="text">taylor swift - the lakes <br>(official lyric video)</div>
                         </div>
-                        <iframe id="video-content-3" src="https://www.youtube.com/embed/tOHcAc3r2kw"
+                        <iframe id="video-content-3" src="https://www.youtube.com/embed/tOHcAc3r2kw?enablejsapi=1&version=3&playerapiid=ytplayer"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -151,13 +152,13 @@
                             <img src="images/thumb-exile-lyric.jpg" alt="">
                             <div class="text">taylor swift - exile (feat. Bon Iver) (official lyric video)</div>
                         </div>
-                        <iframe id="video-content-4" src="https://www.youtube.com/embed/osdoLjUNFnA"
+                        <iframe id="video-content-4" src="https://www.youtube.com/embed/osdoLjUNFnA?enablejsapi=1&version=3&playerapiid=ytplayer"
                                 width="560" height="315" allowfullscreen></iframe>
                     </div>
                 </div>
 
-                <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-arrow.png" alt="Previous"></a>
-                <a class="next" onclick="plusSlides(1)"><img src="images/icon-arrow.png" alt="Next"></a>
+                <a class="prev" onclick="previousSlide()"><img src="images/icon-arrow.png" alt="Previous"></a>
+                <a class="next" onclick="nextSlide()"><img src="images/icon-arrow.png" alt="Next"></a>
             </div>
             <script src="script-video-slideshow.js"></script>
         </section>
