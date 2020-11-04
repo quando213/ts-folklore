@@ -125,7 +125,7 @@
                             <div class="text">taylor swift - cardigan <br>(official video)</div>
                         </div>
                         <iframe id="video-content-1" src="https://www.youtube.com/embed/K-a8s8OLBSE?enablejsapi=1&version=3&playerapiid=ytplayer"
-                                width="560" height="315" allowfullscreen></iframe>
+                                width="560" height="315" alt="taylor swift - cardigan (official video)" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@
                             </div>
                         </div>
                         <iframe id="video-content-2" src="https://www.youtube.com/embed/orXAg5dIMa8?enablejsapi=1&version=3&playerapiid=ytplayer"
-                                width="560" height="315" allowfullscreen></iframe>
+                                width="560" height="315" alt="taylor swift - betty (live from the 2020 academy of country music awards)" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -148,7 +148,7 @@
                             <div class="text">taylor swift - the lakes <br>(official lyric video)</div>
                         </div>
                         <iframe id="video-content-3" src="https://www.youtube.com/embed/tOHcAc3r2kw?enablejsapi=1&version=3&playerapiid=ytplayer"
-                                width="560" height="315" allowfullscreen></iframe>
+                                width="560" height="315" alt="taylor swift - the lakes (official lyric video)" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -159,7 +159,7 @@
                             <div class="text">taylor swift - exile (feat. Bon Iver) (official lyric video)</div>
                         </div>
                         <iframe id="video-content-4" src="https://www.youtube.com/embed/osdoLjUNFnA?enablejsapi=1&version=3&playerapiid=ytplayer"
-                                width="560" height="315" allowfullscreen></iframe>
+                                width="560" height="315" alt="taylor swift - exile (feat. Bon Iver) (official lyric video)" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -247,8 +247,10 @@
             <form action="thankyou.html" method="post">
                 <p>SIGN UP TO RECEIVE UPDATES</p>
                 <div class="signup-form">
-                    <input type="email" name="email" placeholder="email address*" required>
-                    <input list="country" name="country" placeholder="select your country*" required>
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="email address*" required>
+                    <label for="your-country"></label>
+                    <input list="country" id="your-country" name="country" placeholder="select your country*" required>
                 </div>
                 <p>By providing this information, you are opting to receive emails from Taylor Nation with news, special
                     offers, promotions and messages tailored to your interests, and you agree to the UMG/Taylor Nation
@@ -310,8 +312,10 @@
             <form action="thankyou.html" method="post">
                 <p>SIGN UP TO RECEIVE UPDATES</p>
                 <div class="signup-form">
-                    <input type="email" name="email" placeholder="Email Address*" required>
-                    <input list="country" name="country" placeholder="Select Your Country*" required>
+                    <label for="email-full"></label>
+                    <input type="email" id="email-full" name="email" placeholder="Email Address*" required>
+                    <label for="your-country-full"></label>
+                    <input list="country" id="your-country-full" name="country" placeholder="Select Your Country*" required>
                 </div>
                 <datalist id="country">
                     <option value="Afghanistan">
